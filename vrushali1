@@ -1,0 +1,16 @@
+class Game
+{
+	void Show()
+	{
+		System.out.println("1");
+	}
+	void Show(int a)
+	{
+		System.out.println("2");
+	}
+	public static void main(String[] args)
+	{
+		Game t=new Game();
+		t.Show(11);
+	}
+}
