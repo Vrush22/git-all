@@ -1,0 +1,16 @@
+class Game1
+{	
+	void Show(int a,String b)
+	{
+		System.out.println("yes");
+	}
+	void Show(String a,int b)
+	{
+		System.out.println("no");
+	}
+	public static void main(String[] args)
+	{
+		Game1 g=new Game1();
+		g.Show("abcd",1);
+	}
+}
