@@ -1,0 +1,16 @@
+interface I1
+{
+	void Show();
+}
+class student implements I1
+{
+	public void Show()
+	{
+		System.out.println("all presnts");
+	}
+	public static void main(String[] args)
+	{
+		student a=new student();
+		a.Show();
+	}
+}
