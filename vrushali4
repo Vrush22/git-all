@@ -1,0 +1,13 @@
+class Game4
+{
+	public static void main(String[] args)
+	{
+		System.out.println("1");
+		Game4 g=new Game4();
+		g.main(11);
+	}
+	public static void main(int a)
+	{
+		System.out.println("2");
+	}
+}
