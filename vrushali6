@@ -1,0 +1,27 @@
+abstract class vehical1
+{
+	abstract void start();
+}
+class car extends vehical1
+{
+	void start()
+	{
+		System.out.println("starts with key");
+	}
+}
+class scooter extends vehical1
+{
+	void start()
+	{
+		System.out.println("starts with kick");
+	}
+	public static void main(String[] args)
+	{
+		car c=new car();
+		c.start();
+		scooter s=new scooter();
+		s.start();
+		
+	}
+}
+	
