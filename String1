@@ -1,0 +1,10 @@
+class StringDemo
+{
+	public static void main(String[] args)
+	{
+		StringBuilder sb=new StringBuilder("sami");
+		String s2=new String(sb);
+
+		System.out.println(s2);
+	}
+} 

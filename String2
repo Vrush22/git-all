@@ -1,0 +1,10 @@
+class StringDemo
+{
+	public static void main(String[] args)
+	{
+		byte[] b={101,102,103,104,105,106};
+		String s2=new String(b);
+
+		System.out.println(s2);
+	}
+}  
