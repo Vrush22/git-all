@@ -1,0 +1,64 @@
+function validate()
+ {
+    let f=false;
+     
+    let name=$(".name-field").val();
+    if(name=='' || name==undefined)
+    {
+        $(".name-field-msg").html('Name is required !!').addClass('text-dengar');
+    }
+    else{
+        $(".name-field-msg").html('ok !!').removeClass('text-dengar').addClass('text-success');
+        f=true;
+    }
+
+    let Email=$(".Email-field").val();
+    let exp=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if(Email=='' || Email==undefined)
+    {
+        $(".form-field-msg").html('Email is required !!').addClass('text-dengar');
+        f=false;
+    }
+    else if(exp.text(Email)==false)
+    {
+        $(".form-field-msg").html('Invalid Email , Email musr be in correct format (example:abc@email.com').addClass('text-dengar');
+
+    }
+    else{
+        $(".form-field-msg").html('ok !!').removeClass('text-dengar').addClass(text-success);
+        f=true;
+    }
+
+    let password=$(".password-field").val();
+    if(password=='' || password==undefined)
+    {
+        $(".form-field-msg").html('password is required !!').addClass('text-dengar');
+        f=false;
+    }
+    else{
+        $(".form-field-msg").html('ok !!').removeClass('text-dengar').addClass('text-success');
+        f=true;
+    }
+
+    let phone=$(".phone-field").val();
+    if(phone=='' || phone==undefined)
+    {
+        $(".form-field-msg").html('phone number is required !!').addClass('text-dengar');
+        f=false;
+    }
+    else if(phone.length==10){
+            f=true;
+    }
+    else{
+        $(".form-field-msg").html('phone number is invalid, it must be a 10 digit!!').addClass('text-dengar');
+        f=true;
+    }
+    
+
+
+
+
+
+    f= false;
+    return f;
+ }
